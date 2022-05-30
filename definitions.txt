@@ -1,0 +1,87 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+    * Variables
+    * Strings
+    * Funciones (argumentos, return)
+    * Declaraciones if
+    * Valores booleanos (true, false)
+
+// Variable:
+
+Una variable en programacion es un elemento de datos que puede ser de tipo strings: 'Alex', numbers: 10 o booleanos: true o false, cuyo valor puede cambiar durante el curso de la ejecución de un programa y que puede ser recuperada en donde se necesite.
+
+	// Ejemplo:
+	
+	>>var Numero = 10;
+	<-undefined
+	>>Numero
+	<-10
+	
+// Strings:
+
+Es una secuencia de caracteres usado para representar texto, se definiran entre comillas, ya sea simple o doble.
+
+	// Ejemplo:
+	
+	>>var Nombre = 'Alex';
+	<-undefined
+	>>Nombre
+	<-"Alex"
+
+// Funciones:
+
+Una funcion en JavaScript es similar a un procedimiento, es un conjunto de instrucciones ya que pueden realizar multiples acciones que son necesarias para caluclarlas, cambiarlas, hacer algo con ellas.
+
+	// Anatomia de una Funcion:
+	
+	function miFuncion(Argumentos) {
+	}
+
+		// Argumentos:
+		
+		Es una variable que se agrega en los parentesis cuando declaramos una funcion, si agregamos una variable a los parentesis cuando declaramos la funcion, podre usar esta variable dentro de nuestra funcion. se inicializa el valor de esta variable pasandola a la funcion cuando la llamamos.
+		
+			// Ejemplo:
+			
+			function logHola(Nombre) {
+				console.log('Hola, ' + nombre);
+			}
+			logHola('Alex');
+			
+		
+		// Return:
+		
+		La declaracion de retorno ("return") es la unica forma en que los datos escapan de una de una funcion. No se puede acceder a nada mas que a lo que se devuelve fuera de la funcion. Al momento de que una funcion golpea una declaracion retorno, la funcion detiene inmediatamente lo que estaba haciendo y "devuelve" lo espeficado.
+		
+			// Ejemplo:
+			
+			function dividirDosnumeros (a, b) {
+				var producto= a / b;
+				return producto;
+			}
+			dividirDosnumeros(6, 3);
+
+// Declaraciones if:
+
+Son operadores de control de flujo y comparacion. El flujo de control ("control flow") es una forma de que nuestra funcion verifique si algo es True o False.
+
+	// Ejemplo:
+	
+	function puedeManejar(edad) {
+		if (edad > 18) {
+			return true;
+		}
+			return false;
+	}
+	puedeManejar(22); // true
+
+Aca se esta tomando un numero(edad) y verificando si la declaracion es true (22>18), lo es, por lo tanto devolvera true, y la funcion se detendra. Si no es asi, omitira ese codigo y la funcion devolvera false.
+	
+// Valores booleanos (true o false):
+
+Es un tipo de dato que solo puede tener dos posibles valores: verdadero o falso.
+	
+	// Ejemplo:
+	
+	var meEncantaJavascript = true;			
+
