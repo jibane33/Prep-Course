@@ -1,0 +1,47 @@
+// En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+    * for
+    * &&, ||, !
+
+// for:
+
+El Bucle esta compuesto por la palabra clave for, seguida de parentesis y luego abrir y cerrar llaves. Dentro de los parentesis son necesarias (3) cosas. Primero se debe declarar una variable, sobre la cual se va repetir el bucle. El ciclo continuara sucediendo hasta que esta declaracion sea false. Tercero se incrementa la variable hasta el numero deseado para detener el bucle y las (3) declaraciones estan separadas por un punto y coma.
+
+	// Ejemplo:
+	
+	for (let i = 0; i < 10; i++){
+	console.log(i);
+	}
+
+// &&:
+
+Es un operador logico llamado "Y" ("AND"). Se escribe con dos simbolos (&&). Esto evaluara el numero de expresiones que incorporen en el statement y devolvera verdadero si TODAS las expresiones son true. Si uno o ambos de ellos es falso, este operador devolvera false.
+
+	// Ejemplo:
+	
+	let hour = 12;
+	let minute = 30;
+		if (hour == 12 && minute == 30) {
+  			alert("La hora es 12:30");
+	}
+
+// ||:
+
+Es un operador logico llamado "O" ("OR). Esta escrito con dos barras verticales (||). Es la encargada de determinar si una de las expresiones es true. Devolvera true si una o ambas de las expresiones es true. Devolvera false si todas las expresiones son false:
+
+	// Ejemplo:
+	
+	let hour = 9;
+		if (hour < 10 || hour > 18) {
+			alert( 'La oficina esta cerrada.' );
+	}
+
+// !:
+
+Es un operador logico llamado "NO" ("NOT). Esta escrito con un signo de exclamacion (!). este operador esta antes al determinar la igualdad (!=). El operador NOT devolvera el valor booleano opuesto de lo que se le pasa.
+
+	// Ejemplo:
+	
+	alert(!!"cadena de texto no vacía"); // true
+	alert(!!null); // false
+	
