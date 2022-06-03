@@ -1,0 +1,84 @@
+// En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+    * Objetos
+    * Propiedades
+    * Métodos
+    * Bucle for…in
+    * Notación de puntos vs notación de corchetes
+
+// Objetos:
+
+Los objetos y las matrices son similares en ciertas cosas, y muy diferentes en otras. Mientras que los arrays pueden contener multiples elementos relacionados uno con tros, los objetos contienen mucha informacion sobre una sola cosa. Los objetos se instancian usando llaves ({ })
+
+	// Ejemplo
+	
+	const nuevoObjeto = { };
+
+// Propiedades
+
+Una propiedad de un objeto se puede explicar como una variable adjunta al objeto. Las propiedades de un objeto basicamente son lo mismo que las variables comunes de JavaScript, excepto por el nexo con el objeto.
+
+	// Ejemplo
+
+	objectName.propertyName
+
+	var myCar = new Object();
+	myCar.make = 'Ford';
+	myCar.model = 'Mustang';
+
+// Metodos 
+
+Un metodo es una función asociada a un objeto, o, simplemente, un método es una propiedad de un objeto que es una funcion. Los metodos se definen normalmente como una funcion, con excepción de que tienen que ser asignados como la propiedad de un objeto.
+
+	// Ejemplo
+
+	objectName.methodname = functionName;
+
+	var myObj = {
+ 	 myMethod: function(params) {
+    	// ...hacer algo
+  	}
+
+// Bucles for...in
+
+La instruccion for-in itera sobre todas las propiedades enumerables de un objeto que esta codificado por cadenas (ignorando los codificados por Simbolos, incluidas las propiedades enumerables heredadas.
+
+	// Ejemplo
+
+	const usuario = {
+		username : 'Alex',
+		password : 1234,
+		lovesJS : true,
+	};
+	for (let clave in usuario){
+		console.log(clave);
+		console.log(susario[clave]);
+	
+	// username : 'Alex'
+	// password : 1234
+	// lovesJS : true
+
+// Notación de puntos vs notación de corchetes
+
+Es posible acceder a los valores de un objeto llamando al nombre del objeto y la clave. 
+
+	* Notación de puntos
+
+	La notacion de puntos podemos llamar al nombre del objeto, un punto y el nombre de la clave. Asi como llamamos a la propiedad .length en una matriz. La propiedad de longitud es un par de clave-valor.
+
+	// Ejemplo
+	
+	user.lovesJS; 	// true
+	user.username;	// Alex
+
+	* Notación de corchetes
+
+	Esta notacion es como llamar a un elemento en una matriz, aunque con corchetes debemos usar una cadena o numero, o una variable que apunte a una cadena o numero. se puede llamar a cada clave envolviendola con comillas.
+
+	// Ejemplo
+
+	const passString = 'password';
+	user['lovesJS'];	// true
+	user['username'];	// Alex
+	user[passString];	// 1234
+	
