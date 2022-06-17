@@ -1,0 +1,29 @@
+// En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+	* `prototype`
+	* Constructors (de Clases)
+
+// Prototype
+
+Las clases tienen una forma unica de establer un metodo una vez y dar sacceso a cada objeto de esa clase a esos metodos. Esto se llama el prototype. Cada clase tiene una propiedad prototype, que luego podemos establecer en metodos:
+
+	// Ejemplo
+
+	funtion Usuario(nombre, github) {
+		this.nombre = nombre;
+		this.github = github;
+	}
+
+	Usuario.prototype.introduccion = funtion( ) {
+		return  'Mi nombre es ' + this.nombre + ', mi usuario de Github es ' + this.github + '.';
+	}
+
+	let juan = new Usario('Juan', 'juan.perez'); 
+	let antonio = new Usario('Antonio', 'atralice');
+
+	console.log(juan.introduccion( ));
+	console.log(antonio.introduccion( ));
+
+// Contructors (de Clases)
+
+El método constructor es un metodo especial para crear e inicializar un objeto creado a partir de una clase. El código fuente para este ejemplo interactivo se encuentra almacenado en un repositorio de Github.
